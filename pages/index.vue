@@ -1,4 +1,5 @@
 <template>
+  <!-- Start of template section -->
   <div class="home">
     <!-- Header section -->
     <header>
@@ -38,7 +39,7 @@
         <p>As an avid coffee drinker, I'm always looking for innovative ways and opportunities where coffee is put to new use. While coffee may be a necessity for many, I want to explore the fun ways that coffee can be found. In many cultures, it is a focal point of connection and social gatherings with cafes and coffee shops being open all throughout the day and night. Its use in American society takes a slightly different route with coffee initially just being seen as being a necessity for providing caffeine to a working individual. With the third and second wave of coffee culture a more exploratory approach is obvious with a focus on high quality beans and flavors.</p>
         <p>My site will explore coffee history and culture to provide this as a resource for others interested and are looking to learn more. It will include the below pages: </p>
         <div class="image-container">
-          <img :src="require('@/static/coffee-beans-top-view-background.jpg')" alt="coffee beans">
+          <img :src="require('../images/coffee-beans-top-view-background.jpg')" alt="coffee beans">
           <ul>
             <li v-for="(page, pageIndex) in pages" :key="'page-' + pageIndex">{{ page }}</li>
           </ul>
@@ -71,12 +72,14 @@
 </template>
 
 <script>
+// Import any components you need here
+
 export default {
   name: 'index',
   data() {
     return {
       images: [
-        { src: require('@/static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
+        { src: '../static/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans' }
       ],
       navItems: [
         {
@@ -94,7 +97,7 @@ export default {
         'Types of coffee drinks found',
         'Coffee shop options'
       ],
-      loggedIn: false,
+      loggedIn: false, 
       username: 'JohnDoe' // Placeholder username
     };
   }
