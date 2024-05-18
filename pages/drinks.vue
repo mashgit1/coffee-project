@@ -92,9 +92,9 @@ export default {
         {
           links: [
             { text: 'Home', to: '/' },
-            { text: 'Images', to: '/about' },
-            { text: 'Accordion', to: '/compare' },
-            { text: 'Grid System', to: '/drinks' }
+            { text: 'About', to: '/about' },
+            { text: 'Compare', to: '/compare' },
+            { text: 'Drinks', to: '/drinks' }
           ]
         }
       ],

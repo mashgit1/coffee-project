@@ -75,19 +75,19 @@
 // Import any components you need here
 
 export default {
-  name: 'HomeView',
+  name: 'index',
   data() {
     return {
       images: [
-        { src: '../images/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans' }
+        { src: '../static/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans' }
       ],
       navItems: [
         {
           links: [
             { text: 'Home', to: '/' },
-            { text: 'Images', to: '/about' },
-            { text: 'Accordion', to: '/compare' },
-            { text: 'Grid System', to: '/drinks' }
+            { text: 'About', to: '/about' },
+            { text: 'Compare', to: '/compare' },
+            { text: 'Drinks', to: '/drinks' }
           ]
         }
       ],
