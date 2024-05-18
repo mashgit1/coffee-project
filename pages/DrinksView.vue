@@ -26,6 +26,8 @@
       <div class="row">
         <aside class="col-lg-3">
           <h2>Coffee Drink Options</h2>
+          <CoffeeMap />
+          <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=coffee%20near%20Seattle%2C%20WA%2C%20USA&key=AIzaSyANGVxUHQhIwKBPqGT-bKSu3Hi5BM3Vn7k"></iframe>
           <p>After exploring the history of coffee and coffee culture you're now ready to begin picking your drink of choice.</p>
         </aside>
         <section class="col-lg-9">
@@ -74,9 +76,13 @@
 </template>
 
 <script>
+import CoffeeMap from '@/components/CoffeeMap.vue'; 
 
 export default {
   name: 'DrinksView',
+  components: {
+    CoffeeMap 
+  },
   data() {
     return {
       images: [
