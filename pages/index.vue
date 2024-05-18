@@ -85,9 +85,9 @@ export default {
         {
           links: [
             { text: 'Home', to: '/' },
-            { text: 'Images', to: '/about.vue' },
-            { text: 'Accordion', to: '/compare.vue' },
-            { text: 'Grid System', to: '/drinks.vue' }
+            { text: 'Images', to: '/about' },
+            { text: 'Accordion', to: '/compare' },
+            { text: 'Grid System', to: '/drinks' }
           ]
         }
       ],

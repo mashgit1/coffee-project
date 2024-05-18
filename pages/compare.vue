@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: 'CompareView',
+  name: 'compare',
   data() {
     return {
       images: [

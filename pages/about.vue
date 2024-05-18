@@ -93,7 +93,7 @@
 import CoffeeImage from '@/components/CoffeeImage.vue'; 
 
 export default {
-  name: 'AboutView',
+  name: 'about',
   components: {
     CoffeeImage // Register the CoffeeImage component
   },

@@ -78,7 +78,7 @@
 import CoffeeMap from '@/components/CoffeeMap.vue'; 
 
 export default {
-  name: 'DrinksView',
+  name: 'drinks',
   components: {
     CoffeeMap 
   },
