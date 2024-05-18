@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { imageBorderMixin } from '@/path/to/imageBorderMixin.js';
+import { imageBorderMixin } from '@/mixins/imageBorder.js';
 
 export default {
   mixins: [imageBorderMixin],
