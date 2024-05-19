@@ -72,7 +72,7 @@
 </template>
 
 <script>
-// Import any components you need here
+
 
 export default {
   name: 'index',
