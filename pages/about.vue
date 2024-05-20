@@ -89,13 +89,13 @@
 </template>
 
 <script>
-// Import the CoffeeImage component
+
 import CoffeeImage from '@/components/CoffeeImage.vue'; 
 
 export default {
   name: 'about',
   components: {
-    CoffeeImage // Register the CoffeeImage component
+    CoffeeImage
   },
   data() {
     return {

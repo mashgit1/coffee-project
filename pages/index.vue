@@ -79,15 +79,15 @@ export default {
   data() {
     return {
       images: [
-        { src: '../static/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans' }
+        { src: require ('../static/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans') }
       ],
       navItems: [
         {
           links: [
             { text: 'Home', to: '/' },
-            { text: 'About', to: '/about' },
-            { text: 'Compare', to: '/compare' },
-            { text: 'Drinks', to: '/drinks' }
+            { text: 'About', to: '/about.vue' },
+            { text: 'Compare', to: '/compare.vue' },
+            { text: 'Drinks', to: '/drinks.vue' }
           ]
         }
       ],
