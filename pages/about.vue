@@ -100,7 +100,7 @@ export default {
   data() {
     return {
       images: [
-        { src: '../images/top-view-tasty-coffee-with-coffee-beans.jpg', alt: 'top view coffee with coffee beans' }
+        { src: require ('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
       navItems: [
         {
