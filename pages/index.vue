@@ -85,9 +85,9 @@ export default {
         {
           links: [
             { text: 'Home', to: '/' },
-            { text: 'About', to: 'pages/about' },
-            { text: 'Compare', to: 'pages/compare' },
-            { text: 'Drinks', to: 'pages/drinks' }
+            { text: 'About', to: '../pages/about.vue' },
+            { text: 'Compare', to: '../pages/compare.vue' },
+            { text: 'Drinks', to: '../pages/drinks.vue' }
           ]
         }
       ],
