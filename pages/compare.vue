@@ -22,7 +22,7 @@
       </nav>
     </header>
     <!-- Main section -->
-    <main>
+    <main class="container">
       <aside>
         <h2>Coffee Cultures</h2>
         <p>Now that you know a little more about the origin of coffee, you can now explore the different coffee cultures around the world.</p>

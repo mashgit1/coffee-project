@@ -22,7 +22,7 @@
       </nav>
     </header>
     <!-- Main section -->
-    <main class="content">
+    <main class="container">
       <section>
         <aside v-for="(discovery, discoveryIndex) in discoveries" :key="'discovery-' + discoveryIndex">
           <h2>{{ discovery.title }}</h2>
@@ -116,9 +116,9 @@ export default {
         { title: 'Discovery of Coffee', description: 'Legend says that coffee was first discovered by an Ethiopian goat herder after he noticed that his goats were strangely energized after eating berries from a tree. They then took the berries and made a drink, realizing that it kept them up at night.' }
       ],
             coffeeImages: [
-        { src: '@/images/coffee-beans-top-view-background.jpg', alt: 'coffee' },
-        { src: '@/images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg', alt: 'coffee on table' },
-        { src: '@/images/ingredients-making-coffee-flat-lay.jpg', alt: 'ingredients for coffee' },
+        { src: require ('../static/coffee-beans-top-view-background.jpg'), alt: 'coffee' },
+        { src: require ('../static/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg'), alt: 'coffee on table' }, 
+        { src: require ('../static/ingredients-making-coffee-flat-lay.jpg'), alt: 'ingredients for coffee' },
       ],
       coffeeTravels: { title: 'Coffee Travels to Europe', description: 'By the 17th century, through trade coffee finally made its way to Europe with many fearing this new dark beverage that had come from the East. Through this controversy, the Pope intervened and after finally tasting it, its popularity finally spread. Coffee began to replace many other drinks such as alcohol in the mornings, due to its ability to allow the drinker to be energized and alert throughout the day.' },
       coffeeInUS: { title: 'Coffee In the US', description: 'In the mid-1600s, coffee was brought to New York and although many coffee houses started to appear, tea was still superior among the British. After events of the Boston Tea Party, coffee was forever stamped in American culture.' },

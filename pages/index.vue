@@ -22,7 +22,7 @@
       </nav>
     </header>
     <!-- Main section -->
-    <main>
+    <main class="container">
       <aside>
         <h2>Overview</h2>
         <p>My project will be a helpful tool for users to navigate the coffee scene and find the best options available.</p> 
