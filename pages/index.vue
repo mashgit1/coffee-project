@@ -33,18 +33,18 @@
         </ul>
       </aside>
       <section class="content">
-        <h2>Site Description</h2>
-        <p>As an avid coffee drinker, I'm always looking for innovative ways and opportunities where coffee is put to new use. While coffee may be a necessity for many, I want to explore the fun ways that coffee can be found. In many cultures, it is a focal point of connection and social gatherings with cafes and coffee shops being open all throughout the day and night. Its use in American society takes a slightly different route with coffee initially just being seen as being a necessity for providing caffeine to a working individual. With the third and second wave of coffee culture a more exploratory approach is obvious with a focus on high quality beans and flavors.</p>
-        <p>My site will explore coffee history and culture to provide this as a resource for others interested and are looking to learn more. It will include the below pages: </p>
-        <div class="image-container">
-          <img :src="require('../images/coffee-beans-top-view-background.jpg')" alt="coffee beans">
-          <ul>
-            <li v-for="(page, pageIndex) in pages" :key="'page-' + pageIndex">{{ page }}</li>
-          </ul>
-        </div>
-        <p v-if="loggedIn">Welcome, {{ username }}!</p> <!-- Display welcome message if logged in -->
-        <p v-else>Please log in to learn more</p> <!-- Display login message if not logged in -->
-      </section>
+      <h2>Site Description</h2>
+      <p>As an avid coffee drinker, I'm always looking for innovative ways and opportunities where coffee is put to new use. While coffee may be a necessity for many, I want to explore the fun ways that coffee can be found. In many cultures, it is a focal point of connection and social gatherings with cafes and coffee shops being open all throughout the day and night. Its use in American society takes a slightly different route with coffee initially just being seen as being a necessity for providing caffeine to a working individual. With the third and second wave of coffee culture a more exploratory approach is obvious with a focus on high quality beans and flavors.</p>
+      <p>My site will explore coffee history and culture to provide this as a resource for others interested and are looking to learn more. It will include the below pages: </p>
+      <div class="image-container">
+        <img :src="require('../images/coffee-beans-top-view-background.jpg')" alt="coffee beans" class="img-fluid img-thumbnail">
+        <ul>
+          <li v-for="(page, pageIndex) in pages" :key="'page-' + pageIndex">{{ page }}</li>
+        </ul>
+      </div>
+      <p v-if="loggedIn">Welcome, {{ username }}!</p> <!-- Display welcome message if logged in -->
+      <p v-else>Please log in to learn more</p> <!-- Display login message if not logged in -->
+    </section>
     </main>
    <footer>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
