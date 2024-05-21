@@ -48,26 +48,23 @@
         <p v-else>Please log in to learn more</p> <!-- Display login message if not logged in -->
       </section>
     </main>
-    <!-- Footer section -->
-    <footer>
-      <!-- Footer navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <!-- Footer navigation links with v-for loop -->
-              <li class="nav-item" v-for="(link, linkIndex) in navItems[0].links" :key="'footer-link-' + linkIndex">
-                <nuxt-link :to="link.to">{{ link.text }}</nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <p>© 2024 Coffee, LLC | Seattle, WA</p>
-    </footer>
+   <footer>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarFooter">
+        <ul class="navbar-nav">
+          <li class="nav-item" v-for="(link, linkIndex) in navItems[0].links" :key="'footer-link-' + linkIndex">
+            <nuxt-link :to="link.to">{{ link.text }}</nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <p>© 2024 Coffee, LLC | Seattle, WA</p>
+</footer>
   </div>
 </template>
 

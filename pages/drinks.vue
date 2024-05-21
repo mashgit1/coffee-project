@@ -32,14 +32,14 @@
         <section class="col-lg-9">
           <p>Below you will find some common drink options.</p>
           <div class="image-container d-flex align-items-center mb-4">
-            <img :src="require(drinkOptions.image.src)" :alt="drinkOptions.image.alt" class="img-fluid">
-            <!-- List of drink options with v-for loop -->
-            <ul>
-              <li v-for="(drink, drinkIndex) in drinkOptions.types" :key="'drink-' + drinkIndex">
-                <strong>{{ drink.name }}:</strong> {{ drink.description }}
-              </li>
-            </ul>
+            <img src="../images/couple-enjoying-coffee-weekend.jpg" alt="top view of different coffee drinks" class="img-fluid">
           </div>
+          <!-- List of drink options with v-for loop -->
+          <ul>
+            <li v-for="(drink, drinkIndex) in drinkOptions.types" :key="'drink-' + drinkIndex">
+              <strong>{{ drink.name }}:</strong> {{ drink.description }}
+            </li>
+          </ul>
         </section>
       </div>
       <section class="row">

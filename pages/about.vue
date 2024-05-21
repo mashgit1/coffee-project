@@ -115,10 +115,10 @@ export default {
       discoveries: [
         { title: 'Discovery of Coffee', description: 'Legend says that coffee was first discovered by an Ethiopian goat herder after he noticed that his goats were strangely energized after eating berries from a tree. They then took the berries and made a drink, realizing that it kept them up at night.' }
       ],
-      coffeeImages: [
-        { src: '../images/coffee-beans-top-view-background.jpg', alt: 'coffee' },
-        { src: '../images/' + this.coffeeSpread.src, alt: this.coffeeSpread.alt },
-        { src: '../images/' + this.evolutionOfCoffee.src, alt: this.evolutionOfCoffee.alt },
+            coffeeImages: [
+        { src: '@/images/coffee-beans-top-view-background.jpg', alt: 'coffee' },
+        { src: '@/images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg', alt: 'coffee on table' },
+        { src: '@/images/ingredients-making-coffee-flat-lay.jpg', alt: 'ingredients for coffee' },
       ],
       coffeeTravels: { title: 'Coffee Travels to Europe', description: 'By the 17th century, through trade coffee finally made its way to Europe with many fearing this new dark beverage that had come from the East. Through this controversy, the Pope intervened and after finally tasting it, its popularity finally spread. Coffee began to replace many other drinks such as alcohol in the mornings, due to its ability to allow the drinker to be energized and alert throughout the day.' },
       coffeeInUS: { title: 'Coffee In the US', description: 'In the mid-1600s, coffee was brought to New York and although many coffee houses started to appear, tea was still superior among the British. After events of the Boston Tea Party, coffee was forever stamped in American culture.' },
@@ -126,7 +126,7 @@ export default {
         { title: 'Coffee Now', description: 'Coffee nowadays can be found in many forms and methods. We\'ll share the evolution of coffee and how it brought us where we are today.' }
       ],
       evolutionOfCoffee: {
-        src: '../images/ingredients-making-coffee-flat-lay.jpg',
+        src: '@/images/ingredients-making-coffee-flat-lay.jpg',
         alt: 'ingredients for coffee',
         description: 'Coffee became a staple in American culture especially during the Industrial Revolution which is when the first wave of coffee can be seen. The last few decades have been a period of growth and evolution for the global coffee industry.'
       },

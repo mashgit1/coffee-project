@@ -8,7 +8,7 @@
       <!-- Navigation bar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light" v-for="(navItem, navIndex) in navItems" :key="'nav-' + navIndex">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-target="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -35,13 +35,13 @@
         <div id="coffeeWavesAccordion" class="accordion">
           <div class="accordion-item" v-for="(wave, waveIndex) in coffeeWaves" :key="'wave-' + waveIndex">
             <h3 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-target="collapse" :data-bs-target="'#waveCollapse-' + waveIndex">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#waveCollapse-' + waveIndex">
                 {{ wave.title }}
               </button>
             </h3>
             <div :id="'waveCollapse-' + waveIndex" class="accordion-collapse collapse" :class="{ 'show': waveIndex === 0 }">
               <div class="accordion-body">
-                <p>{{ wave.description }} <a :href="wave.link" data-bs-target="tooltip" :title="'Click here to learn more about ' + wave.title">Learn more</a></p>
+                <p>{{ wave.description }} <a :href="wave.link" data-bs-toggle="tooltip" :title="'Click here to learn more about ' + wave.title">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
       <!-- Footer navigation bar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-target="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -90,7 +90,7 @@ export default {
   data() {
     return {
       images: [
-        { src: require ('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
+        { src: require('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
       navItems: [
          {
@@ -108,7 +108,7 @@ export default {
         { title: 'Third Wave', description: 'Third wave coffee, commonly known as specialty coffee, evolved from a small community in the 1980s that was highly focused on the coffee beans. The coffee has specific flavor notes (eg. honey sweetness, rose aromatics, and orange acidity), lighter roast profiles, latte art, single origin beans, and more. This wave in now the largest coffee sub-industry in the US.' }
       ],
       worldMap: {
-        src: '../images/world-map-made-coffee-white-background.jpg',
+        src: require('../images/world-map-made-coffee-white-background.jpg'),
         alt: 'world map of coffee',
         description: 'In most other parts of the world, coffee culture stems from connection. People gather in groups or at home to socialize with friends and family over a cup of coffee. Coffee culture around the world thrives on connection and it can be seen in cafes in Italy, Turkey, Egypt, Japan, and many other regions.'
       },
