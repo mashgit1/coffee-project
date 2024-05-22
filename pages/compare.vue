@@ -40,7 +40,7 @@
                 type="button"
                 data-bs-toggle="collapse"
                 :data-bs-target="'#collapse-' + waveIndex"
-                aria-expanded="waveIndex === 0 ? 'true' : 'false'"
+                :aria-expanded="waveIndex === 0 ? 'true' : 'false'"
                 :aria-controls="'collapse-' + waveIndex"
               >
                 {{ wave.title }}
@@ -66,7 +66,6 @@
               </div>
             </div>
           </div>
-        </div>
         <h2>Outside of the US</h2>
         <div class="image-container text-center">
           <img :src="worldMap.src" :alt="worldMap.alt" class="img-fluid img-thumbnail w-50">
