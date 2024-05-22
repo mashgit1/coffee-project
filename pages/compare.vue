@@ -48,7 +48,7 @@
         </div>
         <h2>Outside of the US</h2>
         <div class="image-container">
-          <img :src="require(worldMap.src)" :alt="worldMap.alt">
+          <img :src="worldMap.src" :alt="worldMap.alt">
           <p>{{ worldMap.description }}</p>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default {
         { title: 'Third Wave', description: 'Third wave coffee, commonly known as specialty coffee, evolved from a small community in the 1980s that was highly focused on the coffee beans. The coffee has specific flavor notes (eg. honey sweetness, rose aromatics, and orange acidity), lighter roast profiles, latte art, single origin beans, and more. This wave in now the largest coffee sub-industry in the US.' }
       ],
       worldMap: {
-        src: require('../images/world-map-made-coffee-white-background.jpg'),
+        src: require('../static/world-map-made-coffee-white-background.jpg'),
         alt: 'world map of coffee',
         description: 'In most other parts of the world, coffee culture stems from connection. People gather in groups or at home to socialize with friends and family over a cup of coffee. Coffee culture around the world thrives on connection and it can be seen in cafes in Italy, Turkey, Egypt, Japan, and many other regions.'
       },

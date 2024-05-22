@@ -54,7 +54,7 @@
         <h2>{{ evolutionOfCoffeeWaves.title }}</h2>
         <h3 v-for="(wave, waveIndex) in evolutionOfCoffeeWaves.waves" :key="'wave-' + waveIndex">{{ wave.title }}</h3>
         <div class="image-container" v-for="(wave, waveIndex) in evolutionOfCoffeeWaves.waves" :key="'wave-image-' + waveIndex">
-          <img v-if="wave.image" :src="require(wave.image.src)" :alt="wave.image.alt" class="img-fluid">
+          <img v-if="wave.image" :src="wave.image.src" :alt="wave.image.alt" class="img-fluid">
           <p>{{ wave.description }}</p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default {
   data() {
     return {
       images: [
-        { src: require ('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
+        { src: require('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
       navItems: [
         {
@@ -115,10 +115,10 @@ export default {
       discoveries: [
         { title: 'Discovery of Coffee', description: 'Legend says that coffee was first discovered by an Ethiopian goat herder after he noticed that his goats were strangely energized after eating berries from a tree. They then took the berries and made a drink, realizing that it kept them up at night.' }
       ],
-            coffeeImages: [
-        { src: require ('../static/coffee-beans-top-view-background.jpg'), alt: 'coffee' },
-        { src: require ('../static/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg'), alt: 'coffee on table' }, 
-        { src: require ('../static/ingredients-making-coffee-flat-lay.jpg'), alt: 'ingredients for coffee' },
+      coffeeImages: [
+        { src: require('../static/coffee-beans-top-view-background.jpg'), alt: 'coffee' },
+        { src: require('../static/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg'), alt: 'coffee on table' }, 
+        { src: require('../static/ingredients-making-coffee-flat-lay.jpg'), alt: 'ingredients for coffee' },
       ],
       coffeeTravels: { title: 'Coffee Travels to Europe', description: 'By the 17th century, through trade coffee finally made its way to Europe with many fearing this new dark beverage that had come from the East. Through this controversy, the Pope intervened and after finally tasting it, its popularity finally spread. Coffee began to replace many other drinks such as alcohol in the mornings, due to its ability to allow the drinker to be energized and alert throughout the day.' },
       coffeeInUS: { title: 'Coffee In the US', description: 'In the mid-1600s, coffee was brought to New York and although many coffee houses started to appear, tea was still superior among the British. After events of the Boston Tea Party, coffee was forever stamped in American culture.' },
@@ -126,7 +126,7 @@ export default {
         { title: 'Coffee Now', description: 'Coffee nowadays can be found in many forms and methods. We\'ll share the evolution of coffee and how it brought us where we are today.' }
       ],
       evolutionOfCoffee: {
-        src: '@/images/ingredients-making-coffee-flat-lay.jpg',
+        src: require('../static/ingredients-making-coffee-flat-lay.jpg'), 
         alt: 'ingredients for coffee',
         description: 'Coffee became a staple in American culture especially during the Industrial Revolution which is when the first wave of coffee can be seen. The last few decades have been a period of growth and evolution for the global coffee industry.'
       },
@@ -135,7 +135,11 @@ export default {
         waves: [
           { title: 'First Wave', description: 'The first wave of coffee is seen as the lowest quality and is known as commodity coffee. The beans are artificially or naturally flavored, primarily pre-ground offerings, and the coffee is dark and bitter.' },
           { title: 'Second Wave', description: 'The second wave is largely focused on the experience and can be seen in brands like Starbucks and Caribou Coffee that revolutionized cafe culture in the United States in the late 1900s which introduced coffee lovers to a wider variety of coffee experiences.' },
-          { title: 'Third Wave', description: 'Third wave coffee, commonly known as specialty coffee, evolved from a small community in the 1980s that was highly focused on the coffee beans. The coffee has specific flavor notes (e.g., honey sweetness, rose aromatics, and orange acidity), lighter roast profiles, latte art, single origin beans, and more. This wave in now the largest coffee sub-industry in the US.', image: { src: 'images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg', alt: 'latte on table' } }
+          { title: 'Third Wave', description: 'Third wave coffee, commonly known as specialty coffee, evolved from a small community in the 1980s that was highly focused on the coffee beans. The coffee has specific flavor notes (e.g., honey sweetness, rose aromatics, and orange acidity), lighter roast profiles, latte art, single origin beans, and more. This wave in now the largest coffee sub-industry in the US.', 
+          image: { 
+            src: require('@/static/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg'), 
+            alt: 'latte on table' }
+            }
         ]
       },
       sources: [
@@ -156,3 +160,4 @@ export default {
   }
 };
 </script>
+
