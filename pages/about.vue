@@ -28,10 +28,6 @@
           <h2>{{ discovery.title }}</h2>
           <p>{{ discovery.description }}</p>
         </aside>
-        <div class="image-container">
-          <!-- Iterate through images -->
-          <img v-for="(image, index) in coffeeImages" :src="image.src" :alt="image.alt" class="img-fluid" :key="'coffee-image-' + index">
-        </div>
       </section>
 <!-- Background section with v-for loop -->
       <section>

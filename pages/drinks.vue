@@ -26,7 +26,7 @@
       <div class="row">
         <aside class="col-lg-3">
           <h2>Coffee Drink Options</h2>
-          <CoffeeMap title="Nearby Coffee Shops" />
+          <CoffeeMap title="Nearby Coffee Shops" apiKey="AIzaSyANGVxUHQhIwKBPqGT-bKSu3Hi5BM3Vn7k" />
           <p>After exploring the history of coffee and coffee culture you're now ready to begin picking your drink of choice.</p>
         </aside>
         <section class="col-lg-9">

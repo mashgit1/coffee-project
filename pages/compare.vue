@@ -47,8 +47,8 @@
           </div>
         </div>
         <h2>Outside of the US</h2>
-        <div class="image-container" class="img-fluid img-thumbnail"> 
-          <img :src="worldMap.src" :alt="worldMap.alt">
+        <div class="image-container text-center">
+          <img :src="worldMap.src" :alt="worldMap.alt" class="img-fluid img-thumbnail w-50">
           <p>{{ worldMap.description }}</p>
         </div>
       </section>
