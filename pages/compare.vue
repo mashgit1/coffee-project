@@ -32,16 +32,37 @@
         <h2>United States</h2>
         <p>Coffee in America is about convenience, accessibility, and speed. You will typically find Americans drinking coffee at home or grabbing a cup quickly before heading into the office to begin their workday. Although the craft coffee culture has very much taken off in America, even those craft cocktails are often taken to go.</p>
         <p>This is beginning to change with the third wave of coffee. See more about the three waves of coffee below.</p>
-        <div id="coffeeWavesAccordion" class="accordion">
+          <div id="coffeeWavesAccordion" class="accordion">
           <div class="accordion-item" v-for="(wave, waveIndex) in coffeeWaves" :key="'wave-' + waveIndex">
-            <h3 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#waveCollapse-' + waveIndex">
+            <h3 class="accordion-header" :id="'heading-' + waveIndex">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                :data-bs-target="'#collapse-' + waveIndex"
+                aria-expanded="waveIndex === 0 ? 'true' : 'false'"
+                :aria-controls="'collapse-' + waveIndex"
+              >
                 {{ wave.title }}
               </button>
             </h3>
-            <div :id="'waveCollapse-' + waveIndex" class="accordion-collapse collapse" :class="{ 'show': waveIndex === 0 }">
+            <div
+              :id="'collapse-' + waveIndex"
+              class="accordion-collapse collapse"
+              :class="{ 'show': waveIndex === 0 }"
+              :aria-labelledby="'heading-' + waveIndex"
+              data-bs-parent="#coffeeWavesAccordion"
+            >
               <div class="accordion-body">
-                <p>{{ wave.description }} <a :href="wave.link" data-bs-toggle="tooltip" :title="'Click here to learn more about ' + wave.title">Learn more</a></p>
+                <p>
+                  {{ wave.description }}
+                  <a
+                    :href="wave.link"
+                    data-bs-toggle="tooltip"
+                    :title="'Click here to learn more about ' + wave.title"
+                    >Learn more</a
+                  >
+                </p>
               </div>
             </div>
           </div>

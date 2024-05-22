@@ -24,12 +24,12 @@
     <!-- Main section -->
     <main class="container">
       <div class="row">
-        <aside class="col-lg-3">
+        <section class="content">
           <h2>Coffee Drink Options</h2>
           <CoffeeMap title="Nearby Coffee Shops" apiKey="AIzaSyANGVxUHQhIwKBPqGT-bKSu3Hi5BM3Vn7k" />
           <p>After exploring the history of coffee and coffee culture you're now ready to begin picking your drink of choice.</p>
-        </aside>
-        <section class="col-lg-9">
+        </section>
+        <section class="content">
           <p>Below you will find some common drink options.</p>
           <div class="image-container d-flex align-items-center mb-4">
             <img src="../images/couple-enjoying-coffee-weekend.jpg" alt="top view of different coffee drinks" class="img-fluid">
