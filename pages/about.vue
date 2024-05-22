@@ -52,9 +52,11 @@
       </section>
       <section>
         <h2>{{ evolutionOfCoffeeWaves.title }}</h2>
-        <h3 v-for="(wave, waveIndex) in evolutionOfCoffeeWaves.waves" :key="'wave-' + waveIndex">{{ wave.title }}</h3>
-        <div class="image-container" v-for="(wave, waveIndex) in evolutionOfCoffeeWaves.waves" :key="'wave-image-' + waveIndex">
-          <img v-if="wave.image" :src="wave.image.src" :alt="wave.image.alt" class="img-fluid">
+        <div v-for="(wave, waveIndex) in evolutionOfCoffeeWaves.waves" :key="'wave-' + waveIndex">
+          <h3>{{ wave.title }}</h3>
+          <div class="image-container" v-if="wave.image">
+            <img :src="wave.image.src" :alt="wave.image.alt" class="img-fluid">
+          </div>
           <p>{{ wave.description }}</p>
         </div>
       </section>
