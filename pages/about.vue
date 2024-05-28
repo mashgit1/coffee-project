@@ -2,7 +2,7 @@
   <!-- Start of template section -->
     <div class="about">
     <header class="text-center">
-      <h1>Coffee History</h1>
+      <h1>{{ title }}</h1>
       <!-- Images with v-for loop -->
       <img v-for="(image, index) in images" :src="image.src" :alt="image.alt" class="img-fluid" :key="'image-' + index">
       <!-- Navigation bar -->
@@ -97,7 +97,7 @@ export default {
   },
   data() {
     return {
-      
+      title: 'Coffee History',
       images: [
         { src: require('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
@@ -159,7 +159,7 @@ export default {
   },
       head() {
     return {
-      title: 'About - Coffee Project',
+      title: this.title,
       meta: [
         { hid: 'description', name: 'description', content: 'This is the about page of my project site.' },
         { name: 'keywords', content: 'coffee, coffee history, coffee drinks, first wave, second wave, third wave' },

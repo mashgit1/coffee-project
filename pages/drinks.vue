@@ -2,7 +2,7 @@
   <!-- Start of template section -->
   <div class="drinks">
     <header class="text-center">
-      <h1>Types of Coffee Drinks</h1>
+      <h1>{{ title }}</h1>
       <!-- Images with v-for loop -->
       <img v-for="(image, index) in images" :src="image.src" :alt="image.alt" class="img-fluid" :key="'image-' + index">
       <!-- Navigation bar -->
@@ -84,6 +84,7 @@ export default {
   },
   data() {
     return {
+      title: 'Types of Coffee Drinks',
       images: [
         { src: require ('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
@@ -115,7 +116,7 @@ export default {
   },
     head() {
     return {
-      title: 'Drinks - Coffee Project',
+      title: this.title,
       meta: [
         { hid: 'description', name: 'description', content: 'This is the drinks page of my project site.' },
         { name: 'keywords', content: 'coffee, coffee history, coffee drinks, latte, pour over, cold brew, espresso' },
