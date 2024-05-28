@@ -11,8 +11,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'This site will explore coffee history and culture to provide a resource for others and will include these pages; history of coffee in the US, comparison of coffee culture here and in other areas, types of coffee drinks found, coffee shop options' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: 'coffee, coffee drinks, nearby coffee shops, coffee culture, coffee history, explore, resources, coffee waves' },
+      { property: 'og:title', content: 'Coffee Project' },
+      { property: 'og:description', content: 'Discover coffee culture and other resources.' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

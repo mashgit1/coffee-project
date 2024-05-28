@@ -137,6 +137,18 @@ export default {
         { text: 'COFFEE CULTURE AROUND THE WORLD', link: 'https://www.taylorlane.com/blogs/read/coffee-culture-around-the-world' }
       ]
     };
+  },
+  head() {
+    return {
+      title: 'Compare - Coffee Project',
+      meta: [
+        { hid: 'description', name: 'description', content: 'This is the compare page of my project site.' },
+        { name: 'keywords', content: 'coffee, coffee history, coffee drinks, coffee culture, comparison' },
+        { property: 'og:title', content: 'Compare - Coffee Project' },
+        { property: 'og:description', content: 'This is my compare page where you can explore more about different coffee cultures around the world.' },
+        { property: 'og:type', content: 'website' }
+      ]
+    };
   }
 };
 </script>

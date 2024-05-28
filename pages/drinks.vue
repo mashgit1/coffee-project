@@ -112,6 +112,18 @@ export default {
         { text: 'Types of Coffee Drinks', link: 'https://www.webstaurantstore.com/article/397/types-of-coffee-drinks.html' }
       ]
     };
+  },
+    head() {
+    return {
+      title: 'Drinks - Coffee Project',
+      meta: [
+        { hid: 'description', name: 'description', content: 'This is the drinks page of my project site.' },
+        { name: 'keywords', content: 'coffee, coffee history, coffee drinks, latte, pour over, cold brew, espresso' },
+        { property: 'og:title', content: 'Drinks - Coffee Project' },
+        { property: 'og:description', content: 'This is my drinks page where you can explore more about different coffee drink options.' },
+        { property: 'og:type', content: 'website' }
+      ]
+    };
   }
 };
 </script>

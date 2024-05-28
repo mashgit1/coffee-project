@@ -97,6 +97,7 @@ export default {
   },
   data() {
     return {
+      
       images: [
         { src: require('../static/top-view-tasty-coffee-with-coffee-beans.jpg'), alt: 'top view coffee with coffee beans' }
       ],
@@ -155,6 +156,18 @@ export default {
       allImages.push({ src: this.coffeeSpread.src, alt: this.coffeeSpread.alt });
       return allImages;
     }
+  },
+      head() {
+    return {
+      title: 'About - Coffee Project',
+      meta: [
+        { hid: 'description', name: 'description', content: 'This is the about page of my project site.' },
+        { name: 'keywords', content: 'coffee, coffee history, coffee drinks, first wave, second wave, third wave' },
+        { property: 'og:title', content: 'About - Coffee Project' },
+        { property: 'og:description', content: 'This is my about page where you can explore more about the history of coffee and the evolution of coffee culture.' },
+        { property: 'og:type', content: 'website' }
+      ]
+    };
   }
 };
 </script>

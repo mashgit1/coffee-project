@@ -95,6 +95,18 @@ export default {
       loggedIn: false, 
       username: 'JohnDoe' // Placeholder username
     };
+  },
+   head() {
+    return {
+      title: 'Home - Coffee Project',
+      meta: [
+        { hid: 'description', name: 'description', content: 'This is the home page of my project site.' },
+        { name: 'keywords', content: 'coffee, coffee history, coffee drinks, coffee culture' },
+        { property: 'og:title', content: 'Home - Coffee Project' },
+        { property: 'og:description', content: 'This is my home page where you can explore more about coffee.' },
+        { property: 'og:type', content: 'website' }
+      ]
+    };
   }
 };
 </script>
